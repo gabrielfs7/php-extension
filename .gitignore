@@ -1,0 +1,4 @@
+php-7.1.9
+php-7.1.9.tar.gz
+.idea
+!php-7.1.9/ext/hello/
