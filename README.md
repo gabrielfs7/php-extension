@@ -86,3 +86,21 @@ make
 make test
 ```
 
+## Copy hello.so to modules folder
+
+```
+cp php-7.1.9/ext/hello/modules/hello.so <<php_path>>/modules/
+```
+
+Example for my machine:
+
+```
+cp php-7.1.9/ext/hello/modules/hello.so /usr/local/lib/php/extensions/no-debug-non-zts-20160303/
+```
+
+## Testing
+
+```
+php -i | grep hello
+php -r 'echo hello_world();'
+```
